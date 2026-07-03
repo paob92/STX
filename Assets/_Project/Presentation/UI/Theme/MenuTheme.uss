@@ -1,0 +1,279 @@
+/* ===========================================================
+   Tema de los menús (UI Toolkit) — pensado para mobile vertical.
+   Botones grandes, alto contraste, jerarquía clara.
+   =========================================================== */
+
+.screen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 60px 40px;
+}
+
+.screen--center {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(22, 24, 34);
+}
+
+/* La pausa se dibuja como capa oscurecida encima del juego. */
+.screen--dim {
+    background-color: rgba(8, 9, 14, 0.82);
+}
+
+/* ----------------------- Tipografía ----------------------- */
+
+.game-title {
+    font-size: 110px;
+    -unity-font-style: bold;
+    color: rgb(245, 197, 66);
+    -unity-text-align: middle-center;
+    letter-spacing: 8px;
+}
+
+.game-subtitle {
+    font-size: 30px;
+    color: rgb(190, 195, 210);
+    margin-bottom: 70px;
+    -unity-text-align: middle-center;
+}
+
+.screen-title {
+    font-size: 56px;
+    -unity-font-style: bold;
+    color: rgb(236, 238, 248);
+    margin-bottom: 44px;
+    -unity-text-align: middle-center;
+}
+
+.footer-note {
+    font-size: 22px;
+    color: rgb(120, 126, 142);
+    margin-top: 36px;
+    -unity-text-align: middle-center;
+}
+
+/* ----------------------- Botones -------------------------- */
+
+.button-column {
+    width: 540px;
+    align-items: stretch;
+}
+
+.btn {
+    height: 92px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: rgb(238, 240, 250);
+    background-color: rgb(52, 58, 82);
+    border-width: 0;
+    border-radius: 18px;
+    transition-property: scale, background-color;
+    transition-duration: 0.08s;
+}
+
+.btn:hover {
+    background-color: rgb(68, 76, 106);
+    scale: 1.015 1.015;
+}
+
+.btn:active {
+    scale: 0.98 0.98;
+}
+
+.btn:disabled {
+    opacity: 0.38;
+}
+
+.btn--primary {
+    background-color: rgb(66, 133, 244);
+}
+
+.btn--primary:hover {
+    background-color: rgb(92, 154, 250);
+}
+
+.btn--danger {
+    background-color: rgb(122, 52, 62);
+}
+
+.btn--danger:hover {
+    background-color: rgb(154, 66, 78);
+}
+
+.btn--ghost {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.btn--ghost:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+/* ----------------------- Opciones ------------------------- */
+
+.options-panel {
+    width: 680px;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 22px;
+    padding: 34px;
+    margin-bottom: 30px;
+}
+
+.option-row {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.option-label {
+    font-size: 28px;
+    color: rgb(220, 223, 234);
+    width: 220px;
+}
+
+.option-slider {
+    width: 380px;
+}
+
+.option-dropdown {
+    width: 380px;
+    height: 56px;
+    font-size: 24px;
+}
+
+/* ----------------------- Pausa ---------------------------- */
+
+.pause-panel {
+    width: 580px;
+    background-color: rgb(30, 34, 50);
+    border-radius: 26px;
+    padding: 50px;
+    align-items: center;
+}
+
+/* ----------------------- HUD de partida ------------------- */
+
+.hud {
+    justify-content: space-between;
+    padding: 24px;
+    background-color: rgb(26, 30, 42);
+}
+
+.hud-player {
+    align-items: center;
+}
+
+.hud-hero {
+    font-size: 26px;
+    -unity-font-style: bold;
+    color: rgb(226, 229, 240);
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hud-center {
+    align-items: center;
+}
+
+.hud-status {
+    font-size: 26px;
+    -unity-font-style: bold;
+    color: rgb(245, 197, 66);
+}
+
+.board {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 92px;
+}
+
+.minion {
+    width: 82px;
+    height: 86px;
+    margin: 6px;
+    border-radius: 12px;
+    background-color: rgb(60, 70, 96);
+    align-items: center;
+    justify-content: center;
+}
+
+.minion-name {
+    font-size: 15px;
+    color: rgb(235, 238, 248);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.minion-stats {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(255, 214, 120);
+    margin-top: 4px;
+}
+
+.hand {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 134px;
+}
+
+.card {
+    width: 118px;
+    height: 150px;
+    margin: 8px;
+    border-radius: 14px;
+    background-color: rgb(48, 86, 140);
+    color: rgb(240, 243, 250);
+    font-size: 18px;
+    -unity-font-style: bold;
+    white-space: normal;
+    border-width: 0;
+}
+
+.card:hover {
+    background-color: rgb(60, 104, 166);
+    scale: 1.04 1.04;
+}
+
+.card:disabled {
+    opacity: 0.42;
+}
+
+.hud-actions {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.hud-endturn {
+    width: 300px;
+    height: 72px;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hud-pause {
+    width: 72px;
+    height: 72px;
+    margin-left: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.result-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

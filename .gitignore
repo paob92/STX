@@ -1,0 +1,62 @@
+# ---------------------------------------------------
+# Unity .gitignore
+# ---------------------------------------------------
+
+# Carpetas generadas por Unity (no deben versionarse)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# Recorder / grabaciones
+[Rr]ecordings/
+
+# Asset meta data NUNCA se ignora (Unity los necesita).
+# Solo se ignoran los meta de carpetas ignoradas arriba.
+!/[Aa]ssets/**/*.meta
+
+# Proyectos/soluciones generados por los IDE
+.vs/
+.vscode/
+.idea/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Crash reports
+sysinfo.txt
+
+# Gradle / Android
+[Aa]ssets/[Aa]ndroid[Ss]DK/
+*.gradle
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Paquetes locales de node (si aparecieran)
+node_modules/

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="mode-select" class="screen screen--center">
+        <ui:Label text="Elige un modo" class="screen-title" />
+        <ui:VisualElement class="button-column">
+            <ui:Button name="practice-button" text="Carrera rápida" class="btn btn--primary" />
+            <ui:Button name="online-button" text="Online — próximamente" class="btn" />
+            <ui:Button name="back-button" text="Volver" class="btn btn--ghost" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

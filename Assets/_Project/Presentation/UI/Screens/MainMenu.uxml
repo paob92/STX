@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="main-menu" class="screen screen--center">
+        <ui:Label text="STX" class="game-title" />
+        <ui:Label text="Card Battler" class="game-subtitle" />
+        <ui:VisualElement class="button-column">
+            <ui:Button name="play-button" text="Jugar" class="btn btn--primary" />
+            <ui:Button name="options-button" text="Opciones" class="btn" />
+            <ui:Button name="quit-button" text="Salir" class="btn btn--danger" />
+        </ui:VisualElement>
+        <ui:Label text="v0.1 — práctica offline" class="footer-note" />
+    </ui:VisualElement>
+</ui:UXML>

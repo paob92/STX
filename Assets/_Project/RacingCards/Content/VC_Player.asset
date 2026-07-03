@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 203b9c276ba8f2546b7113ea17869d50, type: 3}
+  m_Name: VC_Player
+  m_EditorClassIdentifier: RacingCards::RacingCards.Data.VehicleCard
+  id: player
+  displayName: Rayo
+  model3D: {fileID: 0}
+  level: 1
+  baseSpeed: 122
+  baseAcceleration: 64
+  baseGrip: 56
+  baseHandling: 58
+  weight: 44
+  bodykit: {fileID: 0}
+  wheels: {fileID: 11400000, guid: 129458220fbe2114c85f2df9581e6217, type: 2}
+  suspension: {fileID: 0}

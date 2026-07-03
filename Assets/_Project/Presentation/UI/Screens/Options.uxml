@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="options" class="screen screen--center">
+        <ui:Label text="Opciones" class="screen-title" />
+        <ui:VisualElement class="options-panel">
+            <ui:VisualElement class="option-row">
+                <ui:Label text="Música" class="option-label" />
+                <ui:Slider name="music-slider" low-value="0" high-value="1" value="0.8" class="option-slider" />
+            </ui:VisualElement>
+            <ui:VisualElement class="option-row">
+                <ui:Label text="Efectos (SFX)" class="option-label" />
+                <ui:Slider name="sfx-slider" low-value="0" high-value="1" value="0.8" class="option-slider" />
+            </ui:VisualElement>
+            <ui:VisualElement class="option-row">
+                <ui:Label text="Idioma" class="option-label" />
+                <ui:DropdownField name="language-dropdown" class="option-dropdown" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button name="back-button" text="Volver" class="btn btn--ghost" />
+    </ui:VisualElement>
+</ui:UXML>

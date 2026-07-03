@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="pause" class="screen screen--center screen--dim">
+        <ui:VisualElement class="pause-panel">
+            <ui:Label text="Pausa" class="screen-title" />
+            <ui:VisualElement class="button-column">
+                <ui:Button name="resume-button" text="Reanudar" class="btn btn--primary" />
+                <ui:Button name="options-button" text="Opciones" class="btn" />
+                <ui:Button name="surrender-button" text="Rendirse" class="btn btn--danger" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

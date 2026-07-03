@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="match-hud" class="screen hud">
+
+        <!-- Zona del rival -->
+        <ui:VisualElement class="hud-player">
+            <ui:Label name="enemy-info" class="hud-hero" />
+            <ui:VisualElement name="enemy-board" class="board" />
+        </ui:VisualElement>
+
+        <!-- Centro: estado del turno -->
+        <ui:VisualElement class="hud-center">
+            <ui:Label name="status-label" class="hud-status" />
+        </ui:VisualElement>
+
+        <!-- Zona del jugador -->
+        <ui:VisualElement class="hud-player">
+            <ui:VisualElement name="my-board" class="board" />
+            <ui:Label name="my-info" class="hud-hero" />
+            <ui:VisualElement name="my-hand" class="hand" />
+            <ui:VisualElement class="hud-actions">
+                <ui:Button name="end-turn-button" text="Terminar turno" class="btn btn--primary hud-endturn" />
+                <ui:Button name="pause-button" text="II" class="btn btn--ghost hud-pause" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <!-- Fin de partida (oculto hasta que termine) -->
+        <ui:VisualElement name="result-overlay" class="screen--center screen--dim result-overlay">
+            <ui:VisualElement class="pause-panel">
+                <ui:Label name="result-label" class="screen-title" />
+                <ui:Button name="result-menu-button" text="Volver al menú" class="btn btn--primary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>
