@@ -1,4 +1,4 @@
-# MiJuegoCartas — Cliente Unity
+# STX
 
 Esqueleto inicial de un juego de cartas multijugador por turnos, con arquitectura
 por capas pensada para **compartir el Dominio con un futuro backend .NET**.
